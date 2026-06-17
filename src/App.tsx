@@ -1,44 +1,22 @@
-/* import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg' */
 import './App.css'
-import { About } from './Componets/About/About'
-import { ButtonCv } from './Componets/Buttons/ButtonCv'
-import { CardContacto } from './Componets/Card/CardContacto'
-import Estudios from './Componets/Estudios/Estudios'
-import { Experiencia } from './Componets/Experiencia/Experiencia'
-import { Footer } from './Componets/Footer/Footer'
-import { Navbar } from './Componets/Navbat'
-import { Proyectos } from './Componets/Proyectos/Proyectos'
-import { Tecnologias } from './Componets/Tecologias/Tecnologias'
-
-
-
+import { About } from './sections/About/About'
+import { CardContacto } from './sections/CardContacto/CardContacto'
+import Estudios from './sections/Estudios/Estudios'
+import { Experiencia } from './sections/Experiencia/Experiencia'
+import { MainLayout } from './layouts/MainLayout'
+import { Proyectos } from './sections/Proyectos/Proyectos'
+import { Tecnologias } from './sections/Tecnologias/Tecnologias'
 
 function App() {
 	return (
-		<>
-			<Navbar/>
-		
-			<main>
-				<About/>
-				<ButtonCv/>
-				<Experiencia/>
-				<Proyectos/>
-				<Estudios/>
-				<Tecnologias/>
-				<CardContacto/>
-			</main>
-
-			
-
-			<Footer/>
-
-		</>
-				
-		
-			
-		
+		<MainLayout>
+			<About/>
+			<Experiencia/>
+			<Proyectos/>
+			<Estudios/>
+			<Tecnologias/>
+			<CardContacto/>
+		</MainLayout>
 	)
 }
 
