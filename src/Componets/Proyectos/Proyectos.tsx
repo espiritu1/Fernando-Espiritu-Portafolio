@@ -1,6 +1,6 @@
 
 import { ProyectItem } from "./ProyectItem"; 
-import p from "../../assets/img/verciones.jpg"
+import VideoStudio from "../../assets/img/VideoStudio.png"
 import openAPI from "../../assets/img/openAPI.png"
 
 
@@ -10,9 +10,7 @@ export const Proyectos = () => {
 		<section  id="proyectos" className="max-w-6xl  w-[85%]  m-5 mx-auto">
 			
 			<h2 id="tecnologias-title"
-					className="	text-2xl font-bold text-left 
-
-								 mb-8 ml-20">
+				className="	text-2xl font-bold text-left mb-8 ml-20">
 					Proyectos
 			</h2>
 
@@ -20,7 +18,7 @@ export const Proyectos = () => {
 
 	<ProyectItem
 		nombre="Video manager React"
-		imagen={p}
+		imagen={VideoStudio}
 		descripcion="Panel de administración de videos que permite subir, organizar, buscar y gestionar contenido desde una interfaz moderna y responsive. Incluye vista previa, miniaturas y un diseño adaptable para dispositivos móviles y escritorio, facilitando la gestión de videos."
 		tecnologias={[
 			"React",
