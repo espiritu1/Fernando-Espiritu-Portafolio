@@ -4,6 +4,7 @@ import { IoLogoGithub } from "react-icons/io";
 import { Avatar } from "../../components/Avatar/Avatar"
 import { Descripcion } from "../Descripcion/Descripcion"
 import { Disponible } from "../Disponible/Disponible"
+import { perfil, redes } from "../../data/misDatos"
 import CV from "../../assets/CV/Fernando_Espiritu_CV.docx"
 
 export const About = () => {
@@ -13,20 +14,20 @@ export const About = () => {
 			<div className="max-w-6xl mx-auto">
 
 				<header className="flex flex-col items-center text-center mb-11">
-					
-					
+
 					<h1 className="text-7xl pb-7 font-bold
-						bg-radial from-kanagawa-accent to-[#16574b]
+						bg-radial from-[#727272] to-[#3D4566]
+						dark:bg-radial dark:from-kanagawa-accent dark:to-[#16574b]
 						bg-clip-text text-transparent">
-						Fernando Espíritu
+						{perfil.nombre}
 					</h1>
 
 					<div className="flex items-center">
-						
+
 						<h2 className="text-3xl font-medium mr-2
 							bg-radial  from-[#a11b18] to-[#da2200]
 							bg-clip-text text-transparent">
-								Desarrollador Frontend
+							{perfil.titulo}
 						</h2>
 
 						<div className="md:hidden">
@@ -51,7 +52,7 @@ export const About = () => {
 					</a>
 
 					<a className="active:bg-kanagawa-highlight active:text-kanagawa-bg border-kanagawa-bg-lighter mx-auto md:mx-0 border text-kanagawa-text-primary rounded-md px-4 bg-kanagawa-success inline-flex items-center h-9 hover:bg-kanagawa-highlight hover:text-kanagawa-bg transition-colors duration-300"
-						href="https://github.com/espiritu1"
+						href={redes.github}
 						target="_blank"
 						rel="noopener noreferrer">
 						<IoLogoGithub className="text-xl" />
@@ -59,16 +60,16 @@ export const About = () => {
 					</a>
 
 					<a className="active:bg-kanagawa-highlight active:text-kanagawa-bg border-kanagawa-bg-lighter mx-auto md:mx-0 border text-kanagawa-text-primary rounded-md px-4 bg-kanagawa-success inline-flex items-center h-9 hover:bg-kanagawa-highlight hover:text-kanagawa-bg transition-colors duration-300"
-						href="https://www.linkedin.com/in/fernando-espiritu-372539248/"
+						href={redes.linkedin}
 						target="_blank"
 						rel="noopener noreferrer">
 						<CiLinkedin className="text-xl" />
 						<span>LinkedIn</span>
 					</a>
 				</div>
-				
+
 			</div>
-			
+
 		</section>
 	</>
 	)

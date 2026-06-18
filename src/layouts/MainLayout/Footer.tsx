@@ -1,3 +1,5 @@
+import { redes } from "../../data/misDatos"
+
 export const Footer = () => {
 	return (
 		<footer className="w-full py-6 px-4 border-t border-gray-200 bg-kanagawa-bg">
@@ -10,7 +12,7 @@ export const Footer = () => {
 					<ul className="flex items-center gap-6">
 						<li>
 							<a
-								href="https://github.com/espiritu1"
+								href={redes.github}
 								target="_blank"
 								rel="noopener noreferrer"
 								className="hover:text-kanagawa-highlight transition-colors"
@@ -20,7 +22,7 @@ export const Footer = () => {
 						</li>
 						<li>
 							<a
-								href="https://www.linkedin.com/in/fernando-espiritu-372539248/"
+								href={redes.linkedin}
 								target="_blank"
 								rel="noopener noreferrer"
 								className="hover:text-kanagawa-highlight transition-colors"
