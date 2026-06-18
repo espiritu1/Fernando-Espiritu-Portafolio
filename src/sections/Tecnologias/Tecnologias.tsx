@@ -1,4 +1,4 @@
-import {  Bun, Css, GitHub, Html, Javascrip, Npm, React, Tailwind, TypeScript } from "./index"
+import {  Bun, Css, Express, GitHub, Html, Javascrip, Npm, React, Tailwind, TypeScript } from "./index"
 
 export const Tecnologias = () => {
 	return (
@@ -71,6 +71,13 @@ export const Tecnologias = () => {
 						<figure className="flex flex-col ">
 							<Npm className="size-15 dark:drop-shadow-[0_4px_20px_#cc000075]" />
 							<figcaption className ="pt-3">NPM</figcaption>
+						</figure>
+					</li>
+
+					<li>
+						<figure className="flex flex-col ">
+							<Express className="size-15 dark:drop-shadow-[0_4px_20px_#ffffff8f]" />
+							<figcaption className="pt-3">Express</figcaption>
 						</figure>
 					</li>
 

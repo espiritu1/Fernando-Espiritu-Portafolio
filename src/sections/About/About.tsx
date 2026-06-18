@@ -16,8 +16,8 @@ export const About = () => {
 				<header className="flex flex-col items-center text-center mb-11">
 
 					<h1 className="text-7xl pb-7 font-bold
-						bg-radial from-[#727272] to-[#3D4566]
-						dark:bg-radial dark:from-kanagawa-accent dark:to-[#16574b]
+						bg-radial from-[#FFD700] to-[#CC0000]
+						dark:bg-radial dark:from-[#F5F0E6] dark:to-[#F7C948]
 						bg-clip-text text-transparent">
 						{perfil.nombre}
 					</h1>
@@ -25,7 +25,7 @@ export const About = () => {
 					<div className="flex items-center">
 
 						<h2 className="text-3xl font-medium mr-2
-							bg-radial  from-[#a11b18] to-[#da2200]
+							bg-radial from-[#EF5F00] to-[#FF0000]
 							bg-clip-text text-transparent">
 							{perfil.titulo}
 						</h2>

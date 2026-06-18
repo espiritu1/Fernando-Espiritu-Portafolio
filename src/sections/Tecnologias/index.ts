@@ -1,5 +1,6 @@
 export * from './icons/Bun';
 export * from './icons/Css';
+export * from './icons/Express';
 export * from './icons/GitHub';
 export * from './icons/Html';
 export * from './icons/Javascript';
