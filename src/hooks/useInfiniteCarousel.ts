@@ -8,18 +8,16 @@ export const useInfiniteCarousel = (speed = 0.5) => {
 		const track = trackRef.current;
 		if (!track) return;
 
+		const itemsWidth = track.scrollWidth / 2;
 		let pos = 0;
 		let rafId: number;
 
 		const animate = () => {
 			if (!pausedRef.current) {
-				const halfWidth = track.scrollWidth / 2;
 				pos -= speed;
-
-				if (Math.abs(pos) >= halfWidth) {
-					pos += halfWidth;
+				if (pos <= -itemsWidth) {
+					pos += itemsWidth;
 				}
-
 				track.style.transform = `translateX(${pos}px)`;
 			}
 			rafId = requestAnimationFrame(animate);
