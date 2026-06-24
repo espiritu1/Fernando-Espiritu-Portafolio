@@ -1,16 +1,12 @@
-import type { SVGProps } from "react";
+import type { SVGProps } from 'react';
 
 export const GitHub = (props: SVGProps<SVGSVGElement>) => {
-  return (
-    <svg
-      viewBox="0 0 24 24"
-      fill="currentColor"
-      {...props}
-    >
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 
+	return (
+		<svg viewBox="0 0 24 24" fill="currentColor" {...props}>
+			<path
+				fillRule="evenodd"
+				clipRule="evenodd"
+				d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 
         2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 
         0-.237-.009-.866-.014-1.7-2.782.605-3.369-1.344-3.369-1.344
         -.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608
@@ -24,8 +20,8 @@ export const GitHub = (props: SVGProps<SVGSVGElement>) => {
         4.943.359.31.678.921.678 1.855 0 1.338-.012 
         2.419-.012 2.747 0 .268.18.58.688.481A10.02 
         10.02 0 0022 12.017C22 6.484 17.523 2 12 2z"
-          fill="#ffffff"
-      />
-    </svg>
-  );
+				fill="#ffffff"
+			/>
+		</svg>
+	);
 };
