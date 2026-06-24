@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 @custom-variant dark (&:where(.dark, .dark *));
 
 * {
@@ -9,28 +9,93 @@
 	text-align: center;
 }
 
-@theme {
-  --color-kanagawa-bg-dark: #16161D;
-  --color-kanagawa-bg: #1F1F28;
-  --color-kanagawa-bg-light: #2A2A37;
-  --color-kanagawa-bg-lighter: #363646;
- 
-  --color-kanagawa-text-primary: #e3ddd8;
-  --color-kanagawa-text-secondary: #C8C093;
-  --color-kanagawa-text-muted: #727169;
-
-  --color-kanagawa-primary: #7E9CD8;
-  --color-kanagawa-secondary: #957FB8;
-  --color-kanagawa-accent: #77bf21;
-  --color-kanagawa-highlight: #E6C384;
-
-  --color-kanagawa-success: #255636;
-  --color-kanagawa-warning: #FF9E3B;
-  --color-kanagawa-error: #E82424;
-  --color-kanagawa-info: #6A9589;
-
-  --color-kanagawa-pink: #D27E99;
-  --color-kanagawa-orange: #FFA066;
+.bg-dot-pattern {
+	background-image: radial-gradient(
+		circle,
+		rgba(114, 113, 105, 0.2) 1px,
+		transparent 1px
+	);
+	background-size: 24px 24px;
+}
+.dark .bg-dot-pattern {
+	background-image: radial-gradient(
+		circle,
+		rgba(255, 255, 255, 0.12) 1px,
+		transparent 1px
+	);
 }
 
+@theme {
+	--font-heading: 'Space Grotesk', sans-serif;
 
+	--color-kanagawa-bg-dark: #16161d;
+	--color-kanagawa-bg: #1f1f28;
+	--color-kanagawa-bg-light: #2a2a37;
+	--color-kanagawa-bg-lighter: #363646;
+
+	--color-kanagawa-text-primary: #e3ddd8;
+	--color-kanagawa-100: #dcd7ba;
+	--color-kanagawa-text-secondary: #c8c093;
+	--color-kanagawa-text-muted: #727169;
+
+	--color-kanagawa-primary: #7e9cd8;
+	--color-kanagawa-secondary: #957fb8;
+	--color-kanagawa-accent: #77bf21;
+	--color-kanagawa-highlight: #e6c384;
+
+	--color-kanagawa-success: #255636;
+	--color-kanagawa-warning: #ff9e3b;
+	--color-kanagawa-error: #e82424;
+	--color-kanagawa-info: #6a9589;
+
+	--color-kanagawa-pink: #d27e99;
+	--color-kanagawa-orange: #ffa066;
+}
+
+@keyframes gradient-shift {
+	0%,
+	100% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+}
+
+@keyframes pulse-glow {
+	0%,
+	100% {
+		box-shadow: 0 0 8px rgba(126, 156, 216, 0.3);
+	}
+	50% {
+		box-shadow: 0 0 25px rgba(126, 156, 216, 0.6);
+	}
+}
+
+@theme {
+	--animate-gradient-shift: gradient-shift 8s ease infinite;
+	--animate-pulse-glow: pulse-glow 5s ease-in-out infinite;
+}
+
+.carousel-fade-edges {
+	-webkit-mask-image: linear-gradient(
+		to right,
+		transparent 0%,
+		black 5%,
+		black 95%,
+		transparent 100%
+	);
+	mask-image: linear-gradient(
+		to right,
+		transparent 0%,
+		black 5%,
+		black 95%,
+		transparent 100%
+	);
+}
+
+:root {
+	--rt-color-white: #fff;
+	--rt-color-dark: #000;
+	--rt-opacity: 1;
+}
