@@ -1,12 +1,10 @@
-
-import { ExperienciaItem } from "../../components/ExperienciaItem/ExperienciaItem";
-import { experiencia } from "../../data/misDatos";
+import { ExperienciaItem } from '../../components/ExperienciaItem/ExperienciaItem';
+import { experiencia } from '../../data/misDatos';
 
 export const Experiencia = () => {
 	return (
-		<section className="py-10 max-w-6xl w-[85%] mx-auto mb-10" id="experiencia">
-
-			<h2 className="text-2xl font-bold text-left mb-8 ml-20">
+		<section className="py-16 max-w-6xl w-[85%] mx-auto" id="experiencia">
+			<h2 className="text-2xl font-bold font-heading text-left mb-8 ml-20">
 				Experiencia
 			</h2>
 
@@ -15,7 +13,6 @@ export const Experiencia = () => {
 					<ExperienciaItem key={i} {...exp} />
 				))}
 			</div>
-
 		</section>
 	);
 };

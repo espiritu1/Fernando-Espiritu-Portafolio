@@ -1,10 +1,10 @@
-import { ExperienciaItem } from '../../components/ExperienciaItem/ExperienciaItem'
-import { educacion } from '../../data/misDatos'
+import { ExperienciaItem } from '../../components/ExperienciaItem/ExperienciaItem';
+import { educacion } from '../../data/misDatos';
 
 export default function Estudios() {
 	return (
-		<section className="py-10 max-w-6xl w-[85%] mx-auto mb-10">
-			<h2 className="text-2xl font-bold text-left mb-8 ml-20">
+		<section className="py-16 max-w-6xl w-[85%] mx-auto">
+			<h2 className="text-2xl font-bold font-heading text-left mb-8 ml-20">
 				Formación académica
 			</h2>
 
@@ -14,7 +14,6 @@ export default function Estudios() {
 					descripcion={[educacion.carrera, educacion.periodo]}
 				/>
 			</div>
-
 		</section>
-	)
+	);
 }

@@ -1,11 +1,12 @@
-import { redes } from "../../data/misDatos"
+import { redes } from '../../data/misDatos';
 
 export const Footer = () => {
 	return (
-		<footer className="w-full py-6 px-4 border-t border-gray-200 bg-kanagawa-bg">
+		<footer className="w-full py-6 px-4 border-t border-kanagawa-bg-lighter bg-kanagawa-bg">
 			<div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-kanagawa-text-primary dark:text-kanagawa-text-muted">
 				<p className="font-medium">
-					Diseñado y creado con <span className="text-[#58C4DC]">React</span>
+					Diseñado y creado con{' '}
+					<span className="text-[#58C4DC]">React</span>
 				</p>
 
 				<nav aria-label="Redes sociales">
@@ -34,5 +35,5 @@ export const Footer = () => {
 				</nav>
 			</div>
 		</footer>
-	)
-}
+	);
+};
