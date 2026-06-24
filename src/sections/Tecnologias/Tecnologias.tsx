@@ -60,7 +60,15 @@ export const Tecnologias = () => {
 					Tecnologías
 				</h2>
 
-				<div className="overflow-hidden pt-8">
+				<div
+					className="overflow-hidden pt-8"
+					style={{
+						maskImage:
+							'linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%)',
+						WebkitMaskImage:
+							'linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%)',
+					}}
+				>
 					<ul
 						ref={trackRef}
 						className="flex items-center px-4 will-change-transform"
