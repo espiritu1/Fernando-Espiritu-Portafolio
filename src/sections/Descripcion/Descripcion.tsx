@@ -1,6 +1,6 @@
 import { Avatar } from '../../components/Avatar/Avatar';
 import { perfil } from '../../data/misDatos';
-import yo from '../../assets/img/yo.jpg';
+import yo from '../../assets/img/yo.webp';
 
 export const Descripcion = () => {
 	return (

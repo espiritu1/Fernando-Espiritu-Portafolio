@@ -11,7 +11,8 @@ export default function Estudios() {
 			<div className="flex flex-col gap-8 max-w-2xl mx-auto">
 				<ExperienciaItem
 					puesto={educacion.institucion}
-					descripcion={[educacion.carrera, educacion.periodo]}
+					descripcion={[educacion.carrera]}
+					fecha={educacion.periodo}
 				/>
 			</div>
 		</section>

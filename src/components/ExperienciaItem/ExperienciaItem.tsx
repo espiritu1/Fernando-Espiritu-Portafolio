@@ -21,23 +21,31 @@ export const ExperienciaItem = ({
 					{puesto}
 				</h3>
 
-				<p className="text-md text-kanagawa-text-muted">
-					<span>
-						{empresa} {fecha}{' '}
-					</span>
-				</p>
+				{empresa && (
+					<p className="text-md text-kanagawa-text-muted">
+						<span>
+							{empresa} {fecha}{' '}
+						</span>
+					</p>
+				)}
 			</header>
 
-			<section className="mt-2 text-kanagawa-text-muted">
+			<section className="mt-2 ">
 				{descripcion?.map((texto, i) => (
-					<p key={i} className="text-left my-4 ml-8">
+					<p key={i} className={`my-4 ${empresa ? "text-left ml-8" : "text-center"}`}>
 						{texto}
 					</p>
 				))}
 			</section>
 
+			{fecha && !empresa && (
+				<p className="text-center my-4 text-kanagawa-text-muted font-medium">
+					{fecha}
+				</p>
+			)}
+
 			<footer>
-				<p className="mt-4 ml-7 text-kanagawa-text-muted italic text-sm">
+				<p className="mt-4 ml-7 text-shadow-kanagawa-text-primary italic text-sm">
 					{tecnologias}
 				</p>
 			</footer>

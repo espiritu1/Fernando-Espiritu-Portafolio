@@ -5,7 +5,7 @@ import { Avatar } from '../../components/Avatar/Avatar';
 import { Descripcion } from '../Descripcion/Descripcion';
 import { Disponible } from '../Disponible/Disponible';
 import { perfil, redes } from '../../data/misDatos';
-import CV from '../../assets/CV/Fernando_Espiritu_CV.docx';
+
 
 export const About = () => {
 	return (
@@ -42,11 +42,11 @@ export const About = () => {
 
 					<Descripcion />
 
-					<div className="flex justify-center flex-wrap gap-3 w-[65%] mx-auto pb-5">
+					<div className="flex justify-center flex-wrap gap-3 pb-5">
 						<a
-							className="active:bg-kanagawa-highlight active:text-kanagawa-bg border-kanagawa-bg-lighter mx-auto md:mx-0 border text-kanagawa-text-primary rounded-md px-4 bg-kanagawa-success inline-flex items-center h-9 hover:bg-kanagawa-highlight hover:text-kanagawa-bg hover:shadow-[0_0_15px_#e6c384] transition-all duration-300"
-							href={CV}
-							download="Fernando_Espiritu_CV.docx"
+							className="active:bg-kanagawa-highlight active:text-kanagawa-bg border-kanagawa-bg-lighter border text-kanagawa-text-primary rounded-md px-4 bg-kanagawa-success inline-flex items-center h-9 hover:bg-kanagawa-highlight hover:text-kanagawa-bg hover:shadow-[0_0_15px_#e6c384] transition-all duration-300"
+							href="/Fernando_Espiritu_CV.pdf"
+							download="Fernando_Espiritu_CV.pdf"
 							aria-label="Descargar CV"
 							title="Descargar CV"
 						>
@@ -55,7 +55,7 @@ export const About = () => {
 						</a>
 
 						<a
-							className="active:bg-kanagawa-highlight active:text-kanagawa-bg border-kanagawa-bg-lighter mx-auto md:mx-0 border text-kanagawa-text-primary rounded-md px-4 bg-kanagawa-success inline-flex items-center h-9 hover:bg-kanagawa-highlight hover:text-kanagawa-bg hover:shadow-[0_0_15px_#e6c384] transition-all duration-300"
+							className="active:bg-kanagawa-highlight active:text-kanagawa-bg border-kanagawa-bg-lighter border text-kanagawa-text-primary rounded-md px-4 bg-kanagawa-success inline-flex items-center h-9 hover:bg-kanagawa-highlight hover:text-kanagawa-bg hover:shadow-[0_0_15px_#e6c384] transition-all duration-300"
 							href={redes.github}
 							target="_blank"
 							rel="noopener noreferrer"
@@ -65,7 +65,7 @@ export const About = () => {
 						</a>
 
 						<a
-							className="active:bg-kanagawa-highlight active:text-kanagawa-bg border-kanagawa-bg-lighter mx-auto md:mx-0 border text-kanagawa-text-primary rounded-md px-4 bg-kanagawa-success inline-flex items-center h-9 hover:bg-kanagawa-highlight hover:text-kanagawa-bg hover:shadow-[0_0_15px_#e6c384] transition-all duration-300"
+							className="active:bg-kanagawa-highlight active:text-kanagawa-bg border-kanagawa-bg-lighter border text-kanagawa-text-primary rounded-md px-4 bg-kanagawa-success inline-flex items-center h-9 hover:bg-kanagawa-highlight hover:text-kanagawa-bg hover:shadow-[0_0_15px_#e6c384] transition-all duration-300"
 							href={redes.linkedin}
 							target="_blank"
 							rel="noopener noreferrer"

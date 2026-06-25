@@ -1,12 +1,16 @@
+import { lazy, Suspense } from 'react';
 import './App.css';
 import { ScrollReveal } from './components/ScrollReveal';
 import { About } from './sections/About/About';
-import { CardContacto } from './sections/CardContacto/CardContacto';
-import Estudios from './sections/Estudios/Estudios';
-import { Experiencia } from './sections/Experiencia/Experiencia';
 import { MainLayout } from './layouts/MainLayout';
-import { Proyectos } from './sections/Proyectos/Proyectos';
-import { Tecnologias } from './sections/Tecnologias/Tecnologias';
+
+const Experiencia = lazy(() => import('./sections/Experiencia/Experiencia').then(m => ({ default: m.Experiencia })));
+const Proyectos = lazy(() => import('./sections/Proyectos/Proyectos').then(m => ({ default: m.Proyectos })));
+const Estudios = lazy(() => import('./sections/Estudios/Estudios'));
+const Tecnologias = lazy(() => import('./sections/Tecnologias/Tecnologias').then(m => ({ default: m.Tecnologias })));
+const CardContacto = lazy(() => import('./sections/CardContacto/CardContacto').then(m => ({ default: m.CardContacto })));
+
+const sectionFallback = <div className="py-16" />;
 
 function App() {
 	return (
@@ -15,25 +19,35 @@ function App() {
 				<About />
 			</ScrollReveal>
 
-			<ScrollReveal delay={100}>
-				<Experiencia />
-			</ScrollReveal>
+			<Suspense fallback={sectionFallback}>
+				<ScrollReveal delay={100}>
+					<Experiencia />
+				</ScrollReveal>
+			</Suspense>
 
-			<ScrollReveal delay={100}>
-				<Proyectos />
-			</ScrollReveal>
+			<Suspense fallback={sectionFallback}>
+				<ScrollReveal delay={100}>
+					<Proyectos />
+				</ScrollReveal>
+			</Suspense>
 
-			<ScrollReveal delay={100}>
-				<Estudios />
-			</ScrollReveal>
+			<Suspense fallback={sectionFallback}>
+				<ScrollReveal delay={100}>
+					<Estudios />
+				</ScrollReveal>
+			</Suspense>
 
-			<ScrollReveal delay={150}>
-				<Tecnologias />
-			</ScrollReveal>
+			<Suspense fallback={sectionFallback}>
+				<ScrollReveal delay={150}>
+					<Tecnologias />
+				</ScrollReveal>
+			</Suspense>
 
-			<ScrollReveal delay={150} direction="fade">
-				<CardContacto />
-			</ScrollReveal>
+			<Suspense fallback={sectionFallback}>
+				<ScrollReveal delay={150} direction="fade">
+					<CardContacto />
+				</ScrollReveal>
+			</Suspense>
 		</MainLayout>
 	);
 }
