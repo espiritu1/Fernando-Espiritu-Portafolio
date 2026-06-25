@@ -1,4 +1,4 @@
-import solaire from '../../assets/img/solaire.png';
+import solaire from '../../assets/img/solaire.webp';
 import { perfil } from '../../data/misDatos';
 
 interface AvatarProps {
@@ -51,6 +51,7 @@ export const Avatar = ({
 							<img
 								src={flipBackImage}
 								alt={perfil.avatarAlt}
+								loading="lazy"
 								className="w-full h-full object-cover shadow-xl"
 							/>
 						</div>

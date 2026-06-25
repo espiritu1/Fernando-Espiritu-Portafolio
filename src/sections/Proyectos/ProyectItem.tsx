@@ -1,6 +1,7 @@
 export interface Props {
 	nombre: string;
 	imagen: string;
+	imagenSmall: string;
 	descripcion: string;
 	tecnologias: string[];
 	github: string;
@@ -9,6 +10,7 @@ export interface Props {
 export const ProyectItem = ({
 	nombre,
 	imagen,
+	imagenSmall,
 	descripcion,
 	tecnologias,
 	github,
@@ -19,12 +21,16 @@ export const ProyectItem = ({
 				 shadow-lg hover:shadow-xl
 				 transition duration-300"
 		>
-			{/* Imagen */}
-			<img
-				src={imagen}
-				alt={nombre}
-				className="w-full h-70 object-cover"
-			/>
+			<picture>
+				<source srcSet={imagenSmall} media="(max-width: 768px)" />
+				<source srcSet={imagen} media="(min-width: 769px)" />
+				<img
+					src={imagenSmall}
+					alt={nombre}
+					loading="lazy"
+					className="w-full h-70 object-cover"
+				/>
+			</picture>
 
 			{/* Contenido */}
 			<div
