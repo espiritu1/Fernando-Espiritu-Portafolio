@@ -1,4 +1,4 @@
-import{t as e}from"./vendor-B4-wOXvU.js";import{a as t,u as n}from"./index-D5LADFK7.js";var r=e();const i=({nombre:e,imagen:t,imagenSmall:n,descripcion:i,tecnologias:a,github:o})=>(0,r.jsxs)(`article`,{className:`group relative overflow-hidden rounded-xl
+import{t as e}from"./vendor-B4-wOXvU.js";import{a as t,u as n}from"./index-Czgx70Xe.js";var r=e();const i=({nombre:e,imagen:t,imagenSmall:n,descripcion:i,tecnologias:a,github:o})=>(0,r.jsxs)(`article`,{className:`group relative overflow-hidden rounded-xl
 				 shadow-lg hover:shadow-xl
 				 transition duration-300`,children:[(0,r.jsxs)(`picture`,{children:[(0,r.jsx)(`source`,{srcSet:n,media:`(max-width: 768px)`}),(0,r.jsx)(`source`,{srcSet:t,media:`(min-width: 769px)`}),(0,r.jsx)(`img`,{src:n,alt:e,loading:`lazy`,className:`w-full h-70 object-cover`})]}),(0,r.jsxs)(`div`,{className:` p-5 flex flex-col bg-kanagawa-bg md:absolute md:inset-0 md:bg-black/80
 					md:opacity-0 md:group-hover:opacity-100 md:transition md:duration-300
