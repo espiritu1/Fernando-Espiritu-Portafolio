@@ -1,0 +1,9 @@
+import{t as e}from"./vendor-B4-wOXvU.js";import{a as t,u as n}from"./index-D5LADFK7.js";var r=e();const i=({nombre:e,imagen:t,imagenSmall:n,descripcion:i,tecnologias:a,github:o})=>(0,r.jsxs)(`article`,{className:`group relative overflow-hidden rounded-xl
+				 shadow-lg hover:shadow-xl
+				 transition duration-300`,children:[(0,r.jsxs)(`picture`,{children:[(0,r.jsx)(`source`,{srcSet:n,media:`(max-width: 768px)`}),(0,r.jsx)(`source`,{srcSet:t,media:`(min-width: 769px)`}),(0,r.jsx)(`img`,{src:n,alt:e,loading:`lazy`,className:`w-full h-70 object-cover`})]}),(0,r.jsxs)(`div`,{className:` p-5 flex flex-col bg-kanagawa-bg md:absolute md:inset-0 md:bg-black/80
+					md:opacity-0 md:group-hover:opacity-100 md:transition md:duration-300
+		`,children:[(0,r.jsxs)(`div`,{children:[(0,r.jsx)(`h3`,{className:`text-lg font-semibold font-heading text-kanagawa-primary mb-2`,children:e}),(0,r.jsx)(`p`,{className:`text-sm text-kanagawa-100`,children:i})]}),(0,r.jsx)(`div`,{className:`flex-1`}),(0,r.jsx)(`div`,{className:`flex flex-wrap justify-center gap-2 my-5`,children:a.map(e=>(0,r.jsx)(`span`,{className:`px-2 py-1 text-xs rounded-md
+						 bg-amber-500/20
+						 text-amber-400`,children:e},e))}),(0,r.jsx)(`a`,{href:o,target:`_blank`,rel:`noopener noreferrer`,className:`text-gray-300 hover:text-kanagawa-highlight active:text-kanagawa-highlight
+					 hover:drop-shadow-[0_0_5px_#76946A]
+					 transition text-sm`,children:`Ver GitHub`})]})]}),a=()=>(0,r.jsx)(r.Fragment,{children:(0,r.jsxs)(`section`,{id:`proyectos`,className:`py-16 max-w-6xl w-[85%] mx-auto`,children:[(0,r.jsx)(`h2`,{id:`tecnologias-title`,className:`text-2xl font-bold font-heading text-left mb-8 ml-20`,children:`Proyectos`}),(0,r.jsx)(`div`,{className:`flex flex-wrap justify-center gap-6`,children:t.map((e,t)=>(0,r.jsx)(n,{delay:t*100,children:(0,r.jsx)(i,{...e})},t))})]})});export{a as Proyectos};
