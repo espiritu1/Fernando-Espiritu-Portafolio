@@ -19,7 +19,7 @@ export const Descripcion = () => {
 					/>
 				</div>
 
-				<div className="text-left mb-6">
+				<div className="text-left mb-6 px-4">
 					{perfil.descripcion.map((texto, i) => (
 						<p key={i} className="mb-4">
 							{texto}

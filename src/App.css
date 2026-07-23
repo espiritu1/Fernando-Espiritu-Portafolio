@@ -94,6 +94,30 @@
 	);
 }
 
+@keyframes slide-right {
+	0% {
+		transform: translateX(0);
+	}
+	50% {
+		transform: translateX(15cqw);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+
+@keyframes slide-left {
+	0% {
+		transform: translateX(15cqw);
+	}
+	50% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(15cqw);
+	}
+}
+
 :root {
 	--rt-color-white: #fff;
 	--rt-color-dark: #000;

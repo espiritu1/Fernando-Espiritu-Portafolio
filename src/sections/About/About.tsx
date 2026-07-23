@@ -14,8 +14,8 @@ export const About = () => {
 				<div className="max-w-6xl mx-auto">
 					<header className="flex flex-col items-center text-center mb-11">
 						<h1
-							className="text-7xl pb-7 font-bold font-heading
-							bg-[length:200%_200%] animate-gradient-shift
+						className="text-[72px] pb-7 font-bold font-heading
+						bg-[length:200%_200%] animate-gradient-shift
 							bg-radial from-[#FFD700] to-[#CC0000]
 							dark:bg-radial dark:from-[#F5F0E6] dark:to-[#F7C948]
 							bg-clip-text text-transparent"
@@ -45,7 +45,7 @@ export const About = () => {
 					<div className="flex justify-center flex-wrap gap-3 pb-5">
 						<a
 							className="active:bg-kanagawa-highlight active:text-kanagawa-bg border-kanagawa-bg-lighter border text-kanagawa-text-primary rounded-md px-4 bg-kanagawa-success inline-flex items-center h-9 hover:bg-kanagawa-highlight hover:text-kanagawa-bg hover:shadow-[0_0_15px_#e6c384] transition-all duration-300"
-							href="/Fernando_Espiritu_CV.pdf"
+							href={`${import.meta.env.BASE_URL}Fernando_Espiritu_CV.pdf`}
 							download="Fernando_Espiritu_CV.pdf"
 							aria-label="Descargar CV"
 							title="Descargar CV"

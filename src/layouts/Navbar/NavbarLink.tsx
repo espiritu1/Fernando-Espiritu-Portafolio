@@ -7,7 +7,7 @@ export const NavLinks = ({ direction = 'row', onClick }: Props) => {
 	const baseStyles = 'px-2 py-1';
 
 	const linkStyles =
-		'relative text-lg after:absolute after:bottom-0 after:left-1/2 after:h-[3px] after:w-full after:-translate-x-1/2 after:scale-x-0 after:rounded-full after:bg-kanagawa-primary after:transition-transform after:duration-300 hover:after:scale-x-100';
+		'relative text-[16px] after:absolute after:bottom-0 after:left-1/2 after:h-[3px] after:w-full after:-translate-x-1/2 after:scale-x-0 after:rounded-full after:bg-kanagawa-primary after:transition-transform after:duration-300 hover:after:scale-x-100';
 
 	return (
 		<>

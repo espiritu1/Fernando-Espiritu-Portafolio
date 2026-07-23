@@ -47,7 +47,7 @@ export const proyectos = [
 		imagen: VideoStudio,
 		imagenSmall: VideoStudioSmall,
 		descripcion:
-			'Panel de administración de videos que permite subir, organizar, buscar y gestionar contenido desde una interfaz moderna y responsive. Incluye vista previa, miniaturas y un diseño adaptable para dispositivos móviles y escritorio, facilitando la gestión de videos.',
+			'Panel de administración de videos que permite subir, organizar, buscar y gestionar contenido desde una interfaz moderna y responsiva. Incluye vista previa, miniaturas y un diseño adaptable para dispositivos móviles y escritorio, facilitando la gestión de videos.',
 		tecnologias: ['React', 'TypeScript', 'Tailwind'],
 		github: 'https://github.com/espiritu1/video-manager-react',
 	},

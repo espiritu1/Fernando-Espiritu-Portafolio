@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 
-export const useInfiniteCarousel = (speed = 0.5) => {
+export const useInfiniteCarousel = (speed = 0.5, direction: 'left' | 'right' = 'left') => {
 	const trackRef = useRef<HTMLUListElement>(null);
 	const pausedRef = useRef(false);
 
@@ -9,14 +9,15 @@ export const useInfiniteCarousel = (speed = 0.5) => {
 		if (!track) return;
 
 		const itemsWidth = track.scrollWidth / 2;
-		let pos = 0;
+		const dir = direction === 'left' ? -1 : 1;
+		let pos = direction === 'left' ? 0 : -itemsWidth;
 		let rafId: number;
 
 		const animate = () => {
 			if (!pausedRef.current) {
-				pos -= speed;
-				if (pos <= -itemsWidth) {
-					pos += itemsWidth;
+				pos += dir * speed;
+				if (pos <= -itemsWidth || pos >= 0) {
+					pos = direction === 'left' ? 0 : -itemsWidth;
 				}
 				track.style.transform = `translateX(${pos}px)`;
 			}
@@ -25,7 +26,7 @@ export const useInfiniteCarousel = (speed = 0.5) => {
 
 		rafId = requestAnimationFrame(animate);
 		return () => cancelAnimationFrame(rafId);
-	}, [speed]);
+	}, [speed, direction]);
 
 	const pause = () => {
 		pausedRef.current = true;

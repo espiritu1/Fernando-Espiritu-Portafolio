@@ -28,7 +28,7 @@ export const Navbar = () => {
 
 	return (
 		<>
-			<header className="sticky top-0 z-30 w-full pt-4">
+			<header className="sticky top-0 z-30 w-full pt-4" style={{ fontSize: '16px' }}>
 				<nav
 					className="w-[90%] max-w-6xl mx-auto p-2 flex justify-between rounded-full 
 								backdrop-blur-md transition-colors border border-t-0 border-b-0 
