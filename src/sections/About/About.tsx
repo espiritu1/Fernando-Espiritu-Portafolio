@@ -15,7 +15,7 @@ export const About = () => {
 					<header className="flex flex-col items-center text-center mb-11">
 						<h1
 						className="text-[72px] pb-7 font-bold font-heading
-						bg-[length:200%_200%] animate-gradient-shift
+						bg-size-[200%_200%] animate-gradient-shift
 							bg-radial from-[#FFD700] to-[#CC0000]
 							dark:bg-radial dark:from-[#F5F0E6] dark:to-[#F7C948]
 							bg-clip-text text-transparent"
