@@ -17,7 +17,7 @@ export const perfil = {
 
 export const redes = {
 	github: 'https://github.com/espiritu1',
-	linkedin: 'https://www.linkedin.com/in/fernando-espíritu-372539248/',
+	linkedin: 'https://www.linkedin.com/in/fernando-esp%C3%ADritu-372539248/',
 };
 
 export const experiencia = [
