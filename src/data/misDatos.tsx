@@ -39,7 +39,7 @@ export const experiencia = [
 export const educacion = {
 	institucion: 'Universidad Veracruzana',
 	carrera: 'Licenciatura en Tecnologías Computacionales',
-	periodo: '2018 - 2022',
+	periodo: '2020 - 2024',
 };
 
 export const proyectos = [
