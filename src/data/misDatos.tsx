@@ -79,8 +79,8 @@ export const proyectos = [
 		imagenSecundaria: SengledOpciones,
 		imagenSecundariaSmall: SengledOpcionesSmall,
 		descripcion:
-			'App nativa de Android para controlar los focos Sengled descontinuados por la empresa. Creada al quedar sin soporte, controla los focos por UDP local, sin nube ni cuentas: encender, apagar, ajustar brillo y programar rutinas diarias por foco.',
-		tecnologias: ['Kotlin', 'Android', 'Protocolo UDP'],
+			'App nativa de Android para controlar los focos Sengled descontinuados por la empresa. Creada al quedar sin soporte, controla los focos por UDP local, sin nube ni cuentas: encender, apagar, ajustar brillo y programar rutinas diarias por foco. Cuenta con un broker MQTT local con TLS que mantiene los focos siempre conectados, sin depender de servicios externos.',
+		tecnologias: ['Kotlin', 'Android', 'MQTT', 'Protocolo UDP'],
 		github: 'https://github.com/espiritu1/sengled-local-control',
 	},
 ];
