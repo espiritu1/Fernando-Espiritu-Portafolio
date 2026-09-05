@@ -15,7 +15,11 @@ export const Proyectos = () => {
 
 				<div className="flex flex-wrap justify-center gap-6">
 					{proyectos.map((proj, i) => (
-						<ScrollReveal key={i} delay={i * 100}>
+						<ScrollReveal
+							key={i}
+							delay={i * 100}
+							className="w-full md:w-[calc(50%-0.75rem)]"
+						>
 							<ProyectItem {...proj} />
 						</ScrollReveal>
 					))}

@@ -2,6 +2,10 @@ import VideoStudio from '../assets/img/VideoStudio.webp';
 import VideoStudioSmall from '../assets/img/VideoStudio-640.webp';
 import openAPI from '../assets/img/openAPI.webp';
 import openAPISmall from '../assets/img/openAPI-640.webp';
+import Sengled from '../assets/img/Sengled.webp';
+import SengledSmall from '../assets/img/Sengled-640.webp';
+import SengledOpciones from '../assets/img/SengledOpciones.webp';
+import SengledOpcionesSmall from '../assets/img/SengledOpciones-640.webp';
 
 export const perfil = {
 	nombre: 'Fernando Espíritu',
@@ -67,5 +71,16 @@ export const proyectos = [
 			'OpenAPI',
 		],
 		github: 'https://github.com/espiritu1/backend-video-manager-react-ts.git',
+	},
+	{
+		nombre: 'Sengled Bulb Controller',
+		imagen: Sengled,
+		imagenSmall: SengledSmall,
+		imagenSecundaria: SengledOpciones,
+		imagenSecundariaSmall: SengledOpcionesSmall,
+		descripcion:
+			'App nativa de Android para controlar los focos Sengled descontinuados por la empresa. Creada al quedar sin soporte, controla los focos por UDP local, sin nube ni cuentas: encender, apagar, ajustar brillo y programar rutinas diarias por foco.',
+		tecnologias: ['Kotlin', 'Android', 'Protocolo UDP'],
+		github: 'https://github.com/espiritu1/sengled-local-control',
 	},
 ];
