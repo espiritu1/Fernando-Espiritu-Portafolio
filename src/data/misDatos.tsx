@@ -11,8 +11,9 @@ export const perfil = {
 	nombre: 'Fernando Espíritu',
 	titulo: 'Desarrollador Frontend',
 	descripcion: [
-		'Soy desarrollador web enfocado en crear interfaces modernas y funcionales. Trabajo principalmente con HTML, CSS, JavaScript, React y TypeScript, utilizando herramientas como Tailwind CSS para construir experiencias rápidas y atractivas. Además, tengo experiencia del lado del backend con Node.js, bases de datos y construcción de APIs REST.',
-		'Me gusta aprender constantemente y mejorar mis habilidades, cuidando tanto el diseño como la calidad del código. Busco oportunidades donde pueda aportar soluciones eficientes y seguir creciendo como desarrollador. Actualmente también integro herramientas de IA en mi flujo de trabajo para potenciar la productividad y explorar nuevas formas de resolver problemas.',
+		'Soy desarrollador full-stack especializado en React y TypeScript, con más de un año de experiencia construyendo aplicaciones web completas: interfaces modernas con HTML, CSS, JavaScript y Tailwind CSS del lado del frontend, y APIs REST con Node.js sobre bases de datos relacionales (Oracle, MySQL) del lado del backend.',
+		'En mi flujo de trabajo integro agentes de código con IA para analizar, generar y refactorizar código de forma más rápida, manteniendo siempre el control total de las decisiones técnicas.',
+		'Con formación en Tecnologías Computacionales y experiencia trabajando bajo metodologías ágiles con Jira y Confluence, busco oportunidades donde pueda aportar soluciones eficientes, aprendiendo constantemente y cuidando tanto el diseño como la calidad del código.',
 	],
 	email: 'fere.espiritu@gmail.com',
 	telefono: '2288484335',
