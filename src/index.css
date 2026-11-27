@@ -26,3 +26,13 @@ html {
 	font-weight: 400;
 	font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
+
+/* Light mode page background (overscroll / rubber-band areas) */
+body {
+	background-color: #f4f0e8;
+}
+
+/* Dark mode page background */
+html.dark body {
+	background-color: #2a2a37;
+}

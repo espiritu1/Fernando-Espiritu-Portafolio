@@ -14,7 +14,7 @@ export const ThemeProvider: React.FC<{ children: ReactNode }> = ({
 		>
 			<div
 				className="min-h-screen relative z-0
-				text-kanagawa-bg-lighter bg-kanagawa-text-primary 
+				text-kanagawa-bg-lighter bg-kanagawa-bg-cream 
 			 
 			 dark:bg-kanagawa-bg-light dark:text-amber-100"
 			>
